@@ -8,30 +8,36 @@
 </head>
 <body  class="bg-[#070F2B] flex flex-row h-screen fixed">
     <aside class="bg-indigo-900 p-10 w-80 gap-5 h-screen flex flex-col items-center rounded-3xl fixed">
-        <div  class="w-[50px] h-[25px] bg-white flex self-end"></div>
-        <div class="h-[150px]"><div class="flex w-[120px] h-[120px] bg-white rotate-45"></div></div>
-        <div><h1 class="font-sans text-white text-[30px]">AAFI.HICHAM</h1></div>
-        <div><p class="text-white text-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestiae ipsam placeat quae, corporis exercitationem dicta, fuga molestias modi eveniet facere, laudantium soluta odit ipsum repellat obcaecati debitis doloremque unde.</p></div>
-        <div class="bg-myBlue h-[150px] w-[150px] text-white">
-            <div><span>Followers: 100</span></div>
-            <div><span>Following: 140</span></div>
-            <div><span>repos: 10</span></div>
+        <div id="location" class="flex self-end w-[60px] h-[20px] bg-white"></div>
+        <div class="">
+        <div class=" ">
+            <img class="flex w-[120px] h-[120px]" id="avatar">
         </div>
-        <div class="h-[30px] w-[210px] bg-myBlue rounded-md"></div>
+    </div>
+        <div><h1 class="font-sans text-white text-[30px]" id="UserName"></h1></div>
+        <div><p class="text-white text-[10px]" id="bio"></p></div>
+        <div class="bg-myBlue h-[150px] w-[150px] text-white flex flex-col items-center gap-2 pt-5">
+            <div><span></span>Followers: <span id="Followers"></span></div>
+            <div><span>Following: </span><span id="Following"></span></div>
+            <div><span>Repositories: </span><span id="repo"></span></div>
+        </div>
+        <div class="h-[30px] w-[210px] bg-myBlue rounded-md"><spans id="member-since"></spans> </div>
     </aside>
     <main class=" h-screen w-[950px] flex flex-col ml-80 gap-4 overflow-auto">
-        <div class="w-[600px] h-[50px] bg-indigo-900 flex self-center rounded-3xl justify-center items-center text-indigo-300 text-myBlue font-sans text-2xl"><h1>Github Insights</h1></div>
-        <div class="flex items-center justify-center w-[300px] self-center">
-            <input  class="rounded-[15px] bg-[#535C91] text-[#FFFFFF] " type="search" id="mySearch" placeholder="Search.." />
-            </div>
+        <div class="w-[700px] h-[80px] flex self-center bg-[#1B1A55] rounded-3xl justify-center items-center text-myBlue font-sans text-2xl"><h1>Github Insights</h1></div>
+        <div class="flex items-center justify-center w-[400px] self-center">
+            <input  class="rounded-[10px] h-[40px] w-[400px] text-center font-sans text- placeholder-white bg-[#535C91] " type="search" id="default-search" placeholder="Search.." />   
+        </div>
+        <div class="flex flex-col items-center self-center bg-slate-400 w-[200px] justify-center text-white" id="searchResults"></div> 
             <section class="grid grid-rows-3 grid-cols-2 self-center items-center gap-4">
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg"></div>
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg "></div>
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg "></div>
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg col-start-2"></div>
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg col-start-2"></div>
-                <div class="bg-[#1B1A55] w-[250px] h-[120px] rounded-lg col-start-2"></div>
+    
             </section>
+            <div class="flex flex-col"><button class="flex place-content-end"><svg width="34" height="80" viewBox="0 0 60 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 36.2007H24V100.783L36.06 101V36.2007H60L30 0L0 36.2007Z" fill="white"/>
+                </svg></button>
+            <div class="bg-[#1B1A55] rounded-md w-[100px] place-self-end text-white">
+                <button>profile insights</button></div>
+            </div>
     </main>
     <script src="main.js"></script>
 </body>

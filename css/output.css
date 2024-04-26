@@ -558,8 +558,8 @@ video {
   position: fixed;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
+.right-1 {
+  right: 0.25rem;
 }
 
 .ml-80 {
@@ -574,6 +574,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[120px\] {
   height: 120px;
 }
@@ -582,12 +586,16 @@ video {
   height: 150px;
 }
 
-.h-\[25px\] {
-  height: 25px;
+.h-\[20px\] {
+  height: 20px;
 }
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-\[50px\] {
@@ -598,8 +606,20 @@ video {
   height: 100vh;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[890px\] {
+  height: 890px;
+}
+
 .w-80 {
   width: 20rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[120px\] {
@@ -610,6 +630,10 @@ video {
   width: 150px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[210px\] {
   width: 210px;
 }
@@ -618,29 +642,32 @@ video {
   width: 250px;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[50px\] {
-  width: 50px;
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[600px\] {
   width: 600px;
 }
 
+.w-\[60px\] {
+  width: 60px;
+}
+
 .w-\[950px\] {
   width: 950px;
 }
 
-.rotate-45 {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.w-\[900px\] {
+  width: 900px;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.w-\[800px\] {
+  width: 800px;
+}
+
+.w-\[700px\] {
+  width: 700px;
 }
 
 .grid-cols-2 {
@@ -659,12 +686,28 @@ video {
   flex-direction: column;
 }
 
+.place-content-end {
+  place-content: end;
+}
+
+.place-items-end {
+  place-items: end;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -673,6 +716,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.place-self-end {
+  place-self: end;
 }
 
 .self-end {
@@ -687,18 +734,12 @@ video {
   overflow: auto;
 }
 
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
-.rounded-\[15px\] {
-  border-radius: 15px;
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-lg {
@@ -707,6 +748,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-\[\#070F2B\] {
@@ -734,13 +779,34 @@ video {
   background-color: rgb(83 92 145 / var(--tw-bg-opacity));
 }
 
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[1B1A55\] {
+  background-color: 1B1A55;
+}
+
 .p-10 {
   padding: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
@@ -760,18 +826,19 @@ video {
   font-size: 30px;
 }
 
-.capitalize {
-  text-transform: capitalize;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.text-\[\#FFFFFF\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.ordinal {
+  --tw-ordinal: ordinal;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.text-indigo-300 {
+.text-\[\#00FFE0\] {
   --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
+  color: rgb(0 255 224 / var(--tw-text-opacity));
 }
 
 .text-myBlue {
@@ -784,9 +851,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.invert {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.placeholder-white::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-white::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .filter {

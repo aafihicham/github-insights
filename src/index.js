@@ -2,7 +2,7 @@ const moment = require("moment");
 
 document.addEventListener("DOMContentLoaded", function() {
     const defaultUsername = 'aafihicham'; // Default username
-    const token = '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'; 
+    const token = 'token'; 
 
     // Function to fetch user data
     function fetchUserData(username) {
